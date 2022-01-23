@@ -1,0 +1,55 @@
+body {
+  background-color: map-get($colors, mediumGray);
+  font-family: $font-secondary;
+}
+
+h1 {
+  font-family: $font-primary;
+  text-align: center;
+  padding: 3rem;
+  color: map-get($colors, black);
+}
+
+.navbar {
+  background-color: map-get($colors, offWhite) !important;
+}
+
+.active {
+  color: map-get($colors, darkPink) !important;
+}
+
+.row {
+  justify-content: center;
+}
+
+.grid__col {
+  min-height: 260px;
+  margin: 15px;
+  background-color: map-get($colors, offWhite);
+  border-radius: 15px;
+  box-shadow: $box-shadow;
+}
+
+.grid__col--styleOne {
+  border: 3px solid map-get($colors, darkPink);
+}
+
+.grid__col--styleTwo {
+  background-color: map-get($colors, darkPink);
+}
+
+footer {
+  background-color: map-get($colors, offWhite);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: #8d8d8d;
+  color: map-get($colors, textGray);
+  padding: 0 1rem;
+}
